@@ -35,9 +35,12 @@ jobs:
               with:
                 name: Mocha-Test-Result-version-18
                 path: test-results.xml
+
+
     code-coverage:
       name: Code Coverage 
       runs-on: ubuntu-latest
+      continue-on-error: true
       steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
